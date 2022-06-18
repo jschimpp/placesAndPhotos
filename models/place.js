@@ -1,13 +1,14 @@
-const mongoose=require('mongoose');
+/* eslint-disable prefer-destructuring */
+const mongoose = require('mongoose');
 
-const Schema=mongoose.Schema;
+const Schema = mongoose.Schema;
 
-const placeSchema=new Schema({
-placeName: String,
-photo: String,
-country: String
+const placeSchema = new Schema({
+  placeName: String,
+  photo: String,
+  country: String,
 });
 
-const Place=mongoose.model('Places', placeSchema);
+const Place = mongoose.model('Places', placeSchema);
 
-module.exports=Place;
+module.exports = Place;
